@@ -12,8 +12,8 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     [SerializeField]
     protected string displayText = nameof(InteractiveObject);
 
-    private AudioSource audioSource;
-    public string DisplayText => displayText;
+    protected AudioSource audioSource;
+    public virtual string DisplayText => displayText;
 
     protected virtual void Awake()
     {
