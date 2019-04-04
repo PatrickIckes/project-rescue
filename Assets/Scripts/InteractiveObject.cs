@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used on variouis object to enable them for interactivity and use in game.
+/// </summary>
+
 [RequireComponent (typeof(AudioSource))]
 public class InteractiveObject : MonoBehaviour, IInteractive
 {

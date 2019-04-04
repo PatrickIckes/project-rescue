@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Used for Main Menu commands and accessibility.
+/// </summary>
 public class TitleMenu : MonoBehaviour
 {
     [SerializeField]

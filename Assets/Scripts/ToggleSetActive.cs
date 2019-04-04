@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/// <summary>
+/// Toggles the interaction on an object that can only be used once.
+/// </summary>
 
 public class ToggleSetActive : InteractiveObject
 {
