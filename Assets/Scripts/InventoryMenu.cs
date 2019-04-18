@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class InventoryMenu : MonoBehaviour
 {
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
+    private RigidbodyFirstPersonController rigidbodyFirstPersonController;
 
     public static InventoryMenu Instance
     {
