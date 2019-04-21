@@ -2827,51 +2827,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget elit
-    molestie dui vehicula dictum ornare in ipsum. Nam sed ante posuere arcu tristique
-    elementum. Suspendisse dignissim lacinia odio eget dapibus. Quisque condimentum,
-    quam sed tempor accumsan, est arcu malesuada sapien, vitae lobortis lacus sem
-    vel justo. Duis mattis est augue, a laoreet enim mattis eget. Sed sed massa varius,
-    vulputate magna a, suscipit sapien. Curabitur nec justo non sapien iaculis pharetra.
-    Suspendisse elementum, augue auctor iaculis facilisis, leo arcu posuere erat,
-    ac porttitor ante sapien vel ligula. Fusce auctor, ipsum sed imperdiet vestibulum,
-    orci libero pellentesque urna, nec ultricies velit leo quis libero. Donec auctor
-    lacus vel orci tincidunt, in iaculis leo fringilla. Proin lobortis arcu at turpis
-    luctus, quis mattis sem cursus. Integer accumsan ac est molestie placerat. Sed
-    vulputate non turpis et pellentesque. Maecenas iaculis nibh in rutrum mollis.
-    Mauris ultricies erat ac posuere scelerisque.\r\n\r\nDonec vel lobortis dolor.
-    Nam lobortis, neque eget lacinia scelerisque, augue leo hendrerit mauris, pretium
-    posuere est libero ac lorem. Nam luctus leo tincidunt lorem malesuada, commodo
-    congue tortor porttitor. Aliquam erat volutpat. Integer sit amet varius urna.
-    Ut et ex orci. Maecenas vitae nisl in eros facilisis condimentum et a velit. Suspendisse
-    sit amet libero sit amet libero maximus tempus id pharetra tortor. Phasellus et
-    suscipit quam, at feugiat ligula. Vestibulum at viverra sem. Pellentesque mollis
-    consequat lorem, quis semper nibh pharetra eget. Pellentesque in euismod nisi.
-    Duis vel eleifend magna. Sed rhoncus, lorem et condimentum volutpat, felis ipsum
-    congue lacus, vitae suscipit nisl velit non velit. In tempor, diam vitae molestie
-    scelerisque, eros sem porta elit, vel efficitur ante elit ut erat. Ut iaculis
-    et velit pretium fermentum.\r\n\r\nMorbi ultrices nulla erat, tempor condimentum
-    magna mollis vitae. Aenean vitae felis ac nisi lacinia consequat. Aliquam porta
-    purus neque, sed pretium risus euismod ut. Proin mollis justo eget velit convallis,
-    non rhoncus mi venenatis. Phasellus non vestibulum est, ac fringilla urna. Nullam
-    luctus consequat ornare. Integer molestie ipsum ac mi cursus euismod.\r\n\r\nVivamus
-    congue consequat dui id tempor. Cras neque odio, scelerisque non scelerisque quis,
-    pulvinar tempor lacus. Sed luctus enim lorem, id feugiat nisl sodales et. Integer
-    pellentesque rutrum erat a vehicula. Donec ultrices lorem at sollicitudin congue.
-    Maecenas at est ut tortor dignissim accumsan. Ut sem neque, volutpat ut purus
-    at, ullamcorper vulputate velit. Fusce tristique sem dolor, non porta ex lacinia
-    vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum
-    pulvinar ex, id vulputate neque consectetur at.\r\n\r\nNunc pellentesque, lacus
-    eu commodo auctor, ante est pharetra tellus, at tempor neque magna vel sapien.
-    Aliquam vitae neque vestibulum, scelerisque turpis id, commodo risus. Maecenas
-    nisl risus, lacinia non venenatis a, convallis finibus turpis. Vestibulum quis
-    augue et neque interdum tristique vel a nibh. Phasellus viverra pretium metus,
-    eget viverra magna tincidunt nec. Donec rhoncus nec ligula sed iaculis. Quisque
-    tempor id erat eu volutpat. Vivamus id libero pharetra diam posuere volutpat vel
-    in nibh. Praesent a libero tempor, convallis nisi sed, viverra odio. Proin gravida
-    massa non nisl aliquam pharetra. Sed urna elit, molestie a vulputate a, molestie
-    vel dui. Suspendisse erat ipsum, pretium at leo ac, rhoncus ornare orci. Curabitur
-    nec mauris tellus. Proin a efficitur ipsum."
+  m_Text: 'Items you have collected are displayed on the left.
+
+
+    Select an item for more information about the item.'
 --- !u!222 &306378971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4115,6 +4074,8 @@ MonoBehaviour:
   inventoryMenuItemTogglePrefab: {fileID: 1362359317712425708, guid: 8e9624ec557e98042a3361c208a366d3,
     type: 3}
   inventoryListContentArea: {fileID: 1381224425}
+  itemLabelText: {fileID: 1105894058}
+  descriptionAreaText: {fileID: 306378970}
 --- !u!225 &411310149
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5084,7 +5045,7 @@ GameObject:
   - component: {fileID: 489955060}
   - component: {fileID: 489955059}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Selected Item Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8816,7 +8777,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1914332915}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999976
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9065,8 +9026,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -16.2}
-  m_SizeDelta: {x: 0, y: 32.5}
+  m_AnchoredPosition: {x: 0, y: 0.02500534}
+  m_SizeDelta: {x: 0, y: 0.049988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1105894058
 MonoBehaviour:
@@ -9092,7 +9053,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 34
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -9101,9 +9062,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Item Text
-
-'
+  m_Text: 
 --- !u!222 &1105894059
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10726,7 +10685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000137941615, y: -0.000011701247}
+  m_AnchoredPosition: {x: 0.0000137941615, y: -0.000041361436}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1381224426
@@ -28185,8 +28144,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 998608174}
   m_HandleRect: {fileID: 998608173}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.0995421
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
