@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Used on variouis object to enable them for interactivity and use in game.
@@ -12,6 +13,9 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     [Tooltip("Text that will display in the UI when the player looks at this object in the world.")]
     [SerializeField]
     protected string displayText = nameof(InteractiveObject);
+
+    [SerializeField]
+    private string gameSceneName;
 
     protected AudioSource audioSource;
     public virtual string DisplayText => displayText;
@@ -26,6 +30,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
         try
         {
             audioSource.Play();
+            SceneManager.LoadScene(gameSceneName);
         }
         catch
         {

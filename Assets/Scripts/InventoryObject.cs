@@ -17,6 +17,9 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private Sprite icon;
 
+    [SerializeField]
+    private GameObject nextLevelButton;
+
     public Sprite Icon => icon;
     public string Description => description;
     public string ObjectName => objectName;
@@ -48,6 +51,13 @@ public class InventoryObject : InteractiveObject
         InventoryMenu.Instance.AddItemToMenu(this);
         collider.enabled = false;
         renderer.enabled = false;
+        if (objectName.Equals("First Aid Kit"))
+        {
+            nextLevelButton.SetActive(true);
+            Debug.Log("Next Level Activated");
+        }
         Debug.Log($"Inventory menu game object name {InventoryMenu.Instance.name}");
+
+
     }
 }

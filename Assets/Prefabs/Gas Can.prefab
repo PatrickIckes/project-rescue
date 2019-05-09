@@ -347,6 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: Gas Can
+  gameSceneName: 
   objectName: Gas Can
   description: Has a bit of gas left over. It'll do for now.
   icon: {fileID: 21300000, guid: f1b876f8506a76b47b0fb279401d7857, type: 3}
@@ -361,7 +362,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4ba939a0ac191949ae02561f6c86863, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
