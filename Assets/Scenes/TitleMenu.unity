@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24ced969f111364a9fe0820bedb797b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: SimpleTown
+  gameSceneName: SmallTown
 --- !u!95 &1131626221
 Animator:
   serializedVersion: 3
