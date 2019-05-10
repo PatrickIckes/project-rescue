@@ -5,13 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/TitleMenu.unity
     guid: a030ed6c322fc4b48b956844ed62e8e1
   - enabled: 1
-    path: Assets/Scenes/SimpleTown.unity
-    guid: 1b2bed3ec64bac245b915e42441d04a6
+    path: Assets/Scenes/SmallTown.unity
+    guid: 8582331714b4f0246b4e71fa29cf196d
+  - enabled: 1
+    path: Assets/Scenes/MobileHomes.unity
+    guid: 0d7343a5d5b44c34a92faa3cd1287302
+  - enabled: 1
+    path: Assets/Scenes/Campgrounds.unity
+    guid: f0a38644dedd4af4bbc23bcab7e131a6
+  - enabled: 1
+    path: Assets/Scenes/CityOutskirts.unity
+    guid: fd30dfa5fbb54d443b02bfd921685f5f
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 4ae7e21055d7f7f44bfc4f4a13c2be48
   m_configObjects: {}
